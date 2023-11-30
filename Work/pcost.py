@@ -8,7 +8,7 @@ import report
 def portfolio_cost(filename):
     """Calculate protfolio cost."""
     rows = report.read_portfolio(filename)
-    return sum([row["shares"] * row["price"] for row in rows])
+    return sum([row.shares * row.price for row in rows])
 
 
 def main(args):
